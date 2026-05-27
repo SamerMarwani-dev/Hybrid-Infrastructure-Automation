@@ -1,0 +1,19 @@
+services:
+  web:
+    image: nginx:stable-alpine3.23-perl
+    ports:
+      - "8080:80"
+    networks:
+      - engineering_lab
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: SamerSecret123
+    volumes:
+      - ~/docker-data/postgres:/var/lib/postgresql/data
+    networks:
+      - engineering_lab
+
+networks:
+  engineering_lab:
+
