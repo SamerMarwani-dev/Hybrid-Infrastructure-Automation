@@ -13,8 +13,8 @@ The primary objective of this project is to bridge the gap between network engin
 
 ### Network Infrastructure
 The infrastructure design is based on a Spine-Leaf topology to provide high-bandwidth connectivity and low-latency communication.
-* The topology setup and validation are shown in ![Screenshots/spine-leaf-cli-config.png](Screenshots/spine-leaf-cli-config.png).
-* End-to-end connectivity was verified through packet testing, as demonstrated in ![Screenshots/network-ping-test_2.png](Screenshots/network-ping-test_2.png).
+* The topology setup and validation are shown in ![Spine-Leaf Topology](./Screenshots/spine-leaf-cli-config.png)
+* End-to-end connectivity was verified through packet testing, as demonstrated in ![Screenshots/network-ping-test_2.png](Screenshots/network-ping-test.png)
 
 ### Containerized Environment
 Docker provides an isolated and reproducible runtime environment for applications. This lab utilizes a ![Screenshots/docker-compose.png](Screenshots/docker-compose.png) file to orchestrate the multi-container setup.
@@ -46,4 +46,4 @@ services:
 
 networks:
   engineering_lab:
-  
+    driver: bridge
