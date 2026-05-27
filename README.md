@@ -1,4 +1,4 @@
-# Hybrid Network and Infrastructure Lab
+# Hybrid Network and Infrastructure 
 
 This project demonstrates the integration of traditional network design principles with modern containerized infrastructure. By combining network simulation and container orchestration, this lab explores how to build resilient, isolated service environments.
 
